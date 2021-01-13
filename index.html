@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dear Diary</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Dear Diary</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container-fluid">
+          <div class="col-md-6 col-xs-12 offset-md-3">
+            <div class="card text-center mb-2">
+                <div class="card-body">
+                  <h5 class="card-title">Welcome!</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">Type below to get started</h6>
+                </div>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-md-6 col-xs-12 offset-md-3">
+                  <form>
+                    <textarea id="diary-input" rows="20" class="form-control" aria-label="With textarea"></textarea>
+                    <button id="submit" class="btn btn-primary form-control">Submit</button>
+                </form>
+              </div>
+          </div>
+      </div>
+
+      <script>
+          // vanilla js submit code
+          var button = document.getElementById('submit')
+          button.onclick = function (event) {
+            event.preventDefault()
+            
+          }
+          // TODO
+          // create a new button and make an onclick for it, and make it alert success
+          // in the above onclick, get the text from the users input, and log it to the console
+          // BONUS
+          // put the text into local storage, and make it show back up if the page is refreshed
+      </script>
+</body>
+</html>
