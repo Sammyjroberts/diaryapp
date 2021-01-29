@@ -22,7 +22,7 @@
           </div>
         </div>
       </nav>
-      <div class="container-fluid">
+      <div class="container-fluid mt-2">
           <div class="col-md-6 col-xs-12 offset-md-3">
             <div class="card text-center mb-2">
                 <div class="card-body">
@@ -34,25 +34,20 @@
           <div class="row">
               <div class="col-md-6 col-xs-12 offset-md-3">
                   <form>
-                    <textarea id="diary-input" rows="20" class="form-control" aria-label="With textarea"></textarea>
+                    <input type="text" class="form-control" id = 'diary-topic' placeholder="Some Title...">
+                    <textarea id="diary-input" placeholder="Share your thoughts..." rows="20" class="form-control" aria-label="With textarea"></textarea>
                     <button id="submit" class="btn btn-primary form-control">Submit</button>
                 </form>
               </div>
           </div>
+          <div class="row">
+            <div class="col-md-6 col-xs-12 offset-md-3" id="diary-history">
+              
+            </div>
+          </div>
+          
       </div>
 
-      <script>
-          // vanilla js submit code
-          var button = document.getElementById('submit')
-          button.onclick = function (event) {
-            event.preventDefault()
-            
-          }
-          // TODO
-          // create a new button and make an onclick for it, and make it alert success
-          // in the above onclick, get the text from the users input, and log it to the console
-          // BONUS
-          // put the text into local storage, and make it show back up if the page is refreshed
-      </script>
+      <script src="./script.js"></script>
 </body>
 </html>
